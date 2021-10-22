@@ -131,3 +131,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Hellix';
+}
+
+header > h1 {
+  text-align: center;
+  font-weight: normal;
+  border: 2px red solid;
+  padding: 2rem;
+  background: #fff;
+}
+
+.bld-txt {
+  font-weight: bold;
+}
+
+.inner-container {
+  border: 2px green solid;
+
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.inner-container > img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.main-slogan {
+  font-size: 64px;
+  font-weight: normal;
+}
+
+.main-para {
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.contact-btn {
+  font-size: 18px;
+  background: #4b5092;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 200px;
+}
