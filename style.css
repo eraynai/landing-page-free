@@ -150,10 +150,10 @@ header > h1 {
 }
 
 .inner-container {
-  margin: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px red solid;
 }
 
 .main-images {
@@ -189,10 +189,49 @@ header > h1 {
 .second-tagline {
   text-align: left;
   background: #f2f8ff;
+  padding: 45px 15px;
+  width: 100%;
 }
 
 .second-tagline > h2 {
   font-size: 48px;
   font-weight: normal;
-  padding: 2rem 0 1rem 0;
+  padding: 0 0 2rem 0;
+}
+
+.second-tagline > p {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.third-container {
+  background: linear-gradient(to right, #bad4ff 0%, #6487bf 100%);
+  width: 100%;
+  margin: 6rem 0 0 0;
+  text-align: center;
+}
+
+.third-container > h2 {
+  font-size: 48px;
+  padding-top: 4rem;
+}
+
+.third-container .subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.third-container > button {
+  font-size: 18px;
+  color: #436baa;
+  background: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 35px;
+  margin: 2rem 0 0 0;
+}
+
+.main-images.trainer {
+  padding-bottom: 0;
 }
