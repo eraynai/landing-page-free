@@ -295,12 +295,24 @@ footer > h3 {
 footer > input {
   background: url('images/Vector.png');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 95% 50%;
   border: none;
   background-color: #fff;
-  padding: 2rem 2rem;
+  padding: 1rem 1.3rem;
+  width: 70%;
+  border-radius: 10px;
 }
 
 footer > input::placeholder {
   color: #111235;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+footer > p {
+  font-size: 14px;
 }
