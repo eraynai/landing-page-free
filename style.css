@@ -149,7 +149,9 @@ header > h1 {
   font-weight: bold;
 }
 
-.inner-container {
+.inner-container,
+.cards-flex,
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +188,8 @@ header > h1 {
   border: none;
 }
 
-.second-tagline {
+.second-tagline,
+.fourth-container {
   text-align: left;
   background: #f2f8ff;
   padding: 45px 15px;
@@ -234,4 +237,70 @@ header > h1 {
 
 .main-images.trainer {
   padding-bottom: 0;
+}
+
+.main-images.third-image {
+  margin-top: 2rem;
+}
+
+.benefits {
+  font-size: 48px;
+  font-weight: normal;
+  color: #111235;
+  margin: 3rem 0 2rem 0;
+}
+
+.card-des {
+  padding: 3rem 2rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card-des.blue {
+  background: #e4f0ff;
+}
+
+.card-des.purple {
+  background: rgba(114, 122, 239, 0.1);
+}
+
+.card-des > p {
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.contact-btn.get-btn {
+  margin-bottom: 4rem;
+}
+
+footer > h2 {
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+footer > ul,
+footer > h3 {
+  text-align: center;
+}
+
+footer > ul > li {
+  list-style: none;
+  padding: 0 0 2rem 0;
+}
+
+footer > h3 {
+  font-weight: 600;
+}
+footer > input {
+  background: url('images/Vector.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  background-color: #fff;
+  padding: 2rem 2rem;
+}
+
+footer > input::placeholder {
+  color: #111235;
 }
