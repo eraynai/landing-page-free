@@ -145,6 +145,11 @@ header > h1 {
   box-shadow: 1px 9px 20px -1px rgba(17, 18, 53, 0.3);
 }
 
+.navigation,
+.search-icon {
+  display: none;
+}
+
 .bld-txt {
   font-weight: bold;
 }
@@ -155,17 +160,17 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px red solid;
 }
 
 .main-images {
-  width: 100%;
-  max-width: 500px;
+  width: 40vw;
+  object-fit: contain;
+  /* max-width: 500px; */
   padding: 1rem 0;
 }
 
 .main-slogan {
-  font-size: 64px;
+  font-size: 5vw;
   font-weight: normal;
   text-align: center;
 }
@@ -178,14 +183,16 @@ footer {
 }
 
 .contact-btn {
-  font-size: 18px;
+  font-size: 2.9vw;
   background: #4b5092;
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 35px;
   width: 100%;
-  max-width: 200px;
+  max-width: 30vw;
   border: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .second-tagline,
@@ -197,13 +204,13 @@ footer {
 }
 
 .second-tagline > h2 {
-  font-size: 48px;
+  font-size: 4vw;
   font-weight: normal;
-  padding: 0 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .second-tagline > p {
-  font-size: 16px;
+  font-size: 1.2vw;
   line-height: 1.5rem;
 }
 
@@ -317,4 +324,69 @@ footer > input::placeholder {
 footer > p {
   font-size: 14px;
   margin: 4rem 0 6rem 0;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .navigation ul {
+    display: flex;
+  }
+  .navigation ul li {
+    list-style: none;
+    margin-right: 2rem;
+  }
+  header > h1 {
+    box-shadow: none;
+    padding: 2rem 2rem 2rem 0;
+  }
+  .search-icon {
+    display: inline;
+  }
+  .inner-container.first-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* .inner-container {
+    display: flex;
+    flex-direction: column;
+  } */
+  .frame {
+    padding: 0 6rem;
+  }
+  .contact-btn {
+    margin: 0;
+  }
+  .main-para {
+    text-align: left;
+  }
+  .main-slogan {
+    text-align: left;
+  }
+  .second-tagline {
+    border-radius: 50px;
+    padding: 3% 5%;
+    max-width: 50%;
+  }
+
+  .second-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-btn {
+    font-size: 1.2vw;
+    max-width: 30vw;
+  }
 }
